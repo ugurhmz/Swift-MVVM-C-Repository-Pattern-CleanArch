@@ -8,7 +8,6 @@
 import Foundation
 
 enum HomeViewState {
-    case idle
     case loading
     case success
     case failure(String)
