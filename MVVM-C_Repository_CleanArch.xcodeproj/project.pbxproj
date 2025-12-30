@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1F0E66A22F046AC800145AAD /* CoreNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 1F0E66A12F046AC800145AAD /* CoreNetworking */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		1F0E66562F044B0900145AAD /* MVVM-C_Repository_CleanArch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-C_Repository_CleanArch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F0E66A22F046AC800145AAD /* CoreNetworking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = "MVVM-C_Repository_CleanArch";
 			packageProductDependencies = (
+				1F0E66A12F046AC800145AAD /* CoreNetworking */,
 			);
 			productName = "MVVM-C_Repository_CleanArch";
 			productReference = 1F0E66562F044B0900145AAD /* MVVM-C_Repository_CleanArch.app */;
@@ -107,6 +113,9 @@
 			);
 			mainGroup = 1F0E664D2F044B0900145AAD;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1F0E66A02F046AC800145AAD /* XCRemoteSwiftPackageReference "CoreNetworking" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1F0E66572F044B0900145AAD /* Products */;
 			projectDirPath = "";
@@ -339,6 +348,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1F0E66A02F046AC800145AAD /* XCRemoteSwiftPackageReference "CoreNetworking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ugurhmz/CoreNetworking.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F0E66A12F046AC800145AAD /* CoreNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F0E66A02F046AC800145AAD /* XCRemoteSwiftPackageReference "CoreNetworking" */;
+			productName = CoreNetworking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1F0E664E2F044B0900145AAD /* Project object */;
 }

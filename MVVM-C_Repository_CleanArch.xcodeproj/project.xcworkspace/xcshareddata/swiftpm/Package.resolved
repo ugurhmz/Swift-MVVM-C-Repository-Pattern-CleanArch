@@ -1,0 +1,15 @@
+{
+  "originHash" : "6a8817217a2091440a10e8a94de2014fc94fa279e508193644b8c17125f70755",
+  "pins" : [
+    {
+      "identity" : "corenetworking",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ugurhmz/CoreNetworking.git",
+      "state" : {
+        "revision" : "ffefaaa61e51139916b60bf395e3ffec76e51de8",
+        "version" : "1.1.1"
+      }
+    }
+  ],
+  "version" : 3
+}
