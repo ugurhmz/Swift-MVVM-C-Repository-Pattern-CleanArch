@@ -31,6 +31,8 @@ final class AppCoordinator: Coordinator {
 // MARK: -
 extension AppCoordinator {
     private func startHomeFlow() {
-        
+        let homeCoordinator = HomeCoordinator(navigationController: navigationController)
+        childCoordinators.append(homeCoordinator)
+        homeCoordinator.start()
     }
 }
