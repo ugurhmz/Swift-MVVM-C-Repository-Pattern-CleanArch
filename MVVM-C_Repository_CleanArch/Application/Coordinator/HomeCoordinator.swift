@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreNetworking
 
 @MainActor
 final class HomeCoordinator: Coordinator {
@@ -17,7 +18,12 @@ final class HomeCoordinator: Coordinator {
     }
     
     func start() {
-        let homeVC = HomeViewController()
+        let client = NetworkClient()
+        let networkAdapter = CoreNetworkAdapter(client: client)
+        let repository = CharacterRepository(networkService: networkAdapter)
+        let viewModel = HomeViewModel(repository: repository)
+        let homeVC = HomeViewController(viewModel: viewModel)
+        
         navigationController.pushViewController(homeVC, animated: true)
     }
 }
